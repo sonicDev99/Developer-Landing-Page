@@ -1,0 +1,381 @@
+/* Poppins Font Family*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* General styles resets */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+button {
+    font: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+ul,
+ol {
+    list-style: none;
+}
+
+:root {
+    --body-fs: 2rem;
+}
+
+/* ---------------------------------------------------------------- */
+
+/* Header Section */
+
+body {
+    overflow-x: hidden;
+}
+header {
+    padding: 2rem 6rem;
+    min-height: 50vh;
+    width: 100%;
+    background-color: #4617fe;
+    font-size: var(--body-fs);
+    color: #fff;
+    position: relative;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 160rem;
+}
+
+nav {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+.nav-item-active {
+    margin-right: 10px;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.nav-items div svg {
+    width: 2rem;
+    height: 2rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-text {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4rem;
+}
+
+.img-container {
+    position: absolute;
+    bottom: -15%;
+    right: 0;
+}
+.img-container img {
+    transform: scale(1.3);
+}
+
+.companies {
+    font-size: var(--body-fs);
+    margin-top: 2rem;
+    margin-right: 61rem;
+    margin-left: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.company-items {
+    text-decoration: none;
+    color: #000;
+    font-weight: 900;
+}
+
+.hidden-img {
+    display: none;
+}
+
+/* API SECTION */
+section {
+    background-color: #f8f8fa;
+    padding-bottom: 2.5rem;
+}
+.section-wrapper {
+    max-width: 160rem;
+    margin: 0 auto;
+}
+.api {
+    font-size: 1.7rem;
+    margin: 10rem 5rem;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-rows: auto;
+    margin-top: 4rem;
+}
+
+.card,
+.card-active {
+    border-radius: 10px;
+    padding: 1.6rem;
+    cursor: pointer;
+}
+
+.card,
+.card-active h3 {
+    margin-bottom: 3rem;
+}
+.card-active h3 {
+    color: #4617fe;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 10px #0000001a;
+}
+
+.card-active {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px #0000001a;
+}
+
+.card-logo {
+    margin-bottom: 2rem;
+}
+
+.card-body {
+    font-size: 1.5rem;
+}
+
+/* Blog Section */
+
+.blog-heading {
+    padding-left: 4rem;
+}
+.blog-cards {
+    display: flex;
+    margin: 3rem 4rem;
+    justify-content: space-between;
+}
+.blog-card {
+    display: flex;
+    position: relative;
+}
+
+.blog-image img {
+    height: 100%;
+}
+
+.blog-content {
+    padding: 2rem 5rem;
+    background-color: #ffffff;
+    width: 40rem;
+    border-radius: 10px;
+}
+.blog-content h6 {
+    color: #4415fe;
+    font-size: 1rem;
+}
+.blog-content h3 {
+    font-size: 1.6rem;
+    padding: 1.8rem 0;
+}
+.blog-content small {
+    font-size: 1.6rem;
+}
+.blog-bottom {
+    position: absolute;
+    bottom: -14%;
+}
+.blog-author {
+    position: relative;
+    left: 3.8rem;
+    bottom: 2.4rem;
+}
+.blog-author b {
+    font-size: 1rem;
+    display: inline-block;
+}
+
+/* Frequency Asked Question Section */
+
+.faq-section {
+    background: #e9edff;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7rem;
+}
+
+.faq-content {
+    padding-top: 3rem;
+}
+.faq-content h2 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+.faq-content h5 {
+    padding-top: 0.8rem;
+    color: #1f1f1f;
+}
+.faq-content h4 {
+    font-size: 1.2rem;
+    padding: 2rem 0;
+}
+.faq-content button {
+    padding: 8px 12px;
+    border-radius: 5px;
+    background: #4415fe;
+    border: none;
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+/*  DOWNLOAD SECTION  */
+
+.download-section {
+    margin: 4rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.download-content {
+    font-weight: bold;
+}
+
+.download-content span {
+    font-weight: 400;
+}
+
+.download-email {
+    background-color: #d3d8fe;
+    border-radius: 80px;
+    width: 50%;
+}
+
+.download-email form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+.download-email input {
+    border: none;
+    background: none;
+    flex-grow: 1;
+    padding: 1.3rem 2.4rem;
+}
+
+.download-email button {
+    font-size: 1.3rem;
+    border: none;
+    padding: 1rem 4rem;
+    border-radius: 80px;
+    background-color: #4415fe;
+    color: #ffffff;
+}
+
+/* Footer section */
+
+.footer-section {
+    display: flex;
+    background-color: #4415fe;
+    justify-content: space-between;
+}
+
+.footer-left {
+    margin: 6rem 4rem;
+}
+.footer-left ul {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.5rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.footer-right {
+    margin: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer-items {
+    display: flex;
+    gap: 2rem;
+}
+
+.logos-list {
+    display: flex;
+    gap: 1rem;
+}
+.logos-list li {
+    padding-top: 1rem;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 80em) {
+    .img-container img {
+        transform: scale(1);
+    }
+}
+@media only screen and (max-width: 65em) {
+    .companies {
+        gap: 4rem;
+        flex-direction: column;
+        margin-left: 4rem;
+    }
+    .img-container img {
+        transform: scale(0);
+    }
+    .blog-cards {
+        flex-direction: column;
+        gap: 3rem;
+    }
+    .nav-items .nav-item {
+        display: none;
+    }
+
+    .download-section {
+        flex-direction: column;
+    }
+
+    .hidden-img {
+        display: block;
+        position: relative;
+        right: -18%;
+    }
+}
