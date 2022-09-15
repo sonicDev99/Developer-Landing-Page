@@ -16,12 +16,7 @@
 
 ---
 
-<a href='#'>
-  
-## 👉 <img src='https://img.shields.io/badge/Live_preview-blue?style=for-the-badge'>
-  
-</a>
-
+## 👉 [![homepage](https://img.shields.io/badge/Live_preview-blue?style=for-the-badge)](https://cheery-lily-9cd983.netlify.app/ 'Redirect to homepage')
 
 ---
 
